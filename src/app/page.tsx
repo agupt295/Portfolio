@@ -1,6 +1,11 @@
 import Image from "next/image";
 import Linkedin from "./images/linkedin.png"
 import GitHub from "./images/github.png"
+import Java from './images/Java.png'
+import Swift from './images/swift.png'
+
+import Python from './images/python.jpeg'
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -41,9 +46,18 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <h3 className="m-0 text-sm">Languages</h3>
-                <Image src="/image1_url" alt="Java" className="m-0 max-w-[30ch] text-sm opacity-50" width={1} height={1}/>
-                <Image src="/image2_url" alt="Python" className="m-0 max-w-[30ch] text-sm opacity-50" width={1} height={1}/>
-                <Image src="/image3_url" alt="JavaScript" className="m-0 max-w-[30ch] text-sm opacity-50" width={1} height={1}/>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <Image src={Java} alt="Java" className="m-0 max-w-[30ch] text-sm opacity-50" width={30}/>
+                  <h6 style={{ marginLeft: '10px', fontWeight: '300' }}>Java</h6>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <Image src={Python} alt="Python" className="m-0 max-w-[30ch] text-sm opacity-50" width={30}/>
+                  <h6 style={{ marginLeft: '10px', fontWeight: '300' }}>Python</h6>
+                </div>
+                <div style={{ display: 'flex', alignItems: 'center' }}>
+                  <Image src={Swift} alt="Swift" className="m-0 max-w-[30ch] text-sm opacity-50" width={30}/>
+                  <h6 style={{ marginLeft: '10px', fontWeight: '300' }}>Swift</h6>
+                </div>
               </div>
               <div>
                 <h3 className="m-0 text-sm">Frameworks</h3>
