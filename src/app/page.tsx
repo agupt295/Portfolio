@@ -45,7 +45,7 @@ export default function Home() {
           <div className="absolute left-0 top-24 mt-2 hidden w-96 p-4 bg-white border border-gray-300 rounded-lg shadow-lg group-hover:block dark:bg-neutral-800 dark:border-neutral-700">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <h3 className="m-0 text-sm">Languages</h3>
+                <h3>Languages</h3>
                 <div style={{ display: 'flex', alignItems: 'center' }}>
                   <Image src={Java} alt="Java" className="m-0 max-w-[30ch] text-sm opacity-50" width={30}/>
                   <h6 style={{ marginLeft: '10px', fontWeight: '300' }}>Java</h6>
@@ -60,7 +60,7 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <h3 className="m-0 text-sm">Frameworks</h3>
+                <h3>Frameworks</h3>
                 <Image src="/framework1_url" alt="React" className="m-0 max-w-[30ch] text-sm opacity-50" width={1} height={1}/>
                 <Image src="/framework2_url" alt="Vue" className="m-0 max-w-[30ch] text-sm opacity-50" width={1} height={1}/>
                 <Image src="/framework3_url" alt="Angular" className="m-0 max-w-[30ch] text-sm opacity-50" width={1} height={1}/>
@@ -156,7 +156,6 @@ export default function Home() {
                     <Image src={GitHub} alt="GitHub" className="w-6 h-6" width={1} height={1}/>
                   </a>
                 </div>
-                {/* Add images of Linkedin and Github */}
               </div>
             </div>
           </h2>
@@ -166,10 +165,12 @@ export default function Home() {
         </div>
       </div>
 
-      {/* <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
+      {/* <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]"> */}
+      {/* <div>
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
+          // src="/next.svg"
+          src={Linkedin}
           alt="Next.js Logo"
           width={180}
           height={37}
